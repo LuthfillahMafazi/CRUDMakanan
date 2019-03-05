@@ -149,10 +149,10 @@ public class ProfileFragment extends Fragment implements ProfileContract.View {
             // Mencek gender dan memilik sesuai gender untuk ditampilkan pada spinner
             switch (gender){
                 case GENDER_MALE:
-                    spinGender.setSelection(1);
+                    spinGender.setSelection(0);
                     break;
                 case GENDER_FEMALE:
-                    spinGender.setSelection(2);
+                    spinGender.setSelection(1);
                     break;
             }
         }else {
