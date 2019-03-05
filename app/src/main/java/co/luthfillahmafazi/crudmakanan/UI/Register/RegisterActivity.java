@@ -66,9 +66,9 @@ public class RegisterActivity extends AppCompatActivity implements RegisterContr
         }
 
         if (radioLaki.isChecked()){
-            jenkel = "Laki-Laki";
+            jenkel = "L";
         }else {
-            jenkel = "Perempuan";
+            jenkel = "P";
         }
     }
 

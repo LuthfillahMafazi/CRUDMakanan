@@ -31,9 +31,6 @@ public class LoginData implements Parcelable {
     @SerializedName("level")
     private String level;
 
-
-
-
     public String getId_user() {
         return id_user;
     }

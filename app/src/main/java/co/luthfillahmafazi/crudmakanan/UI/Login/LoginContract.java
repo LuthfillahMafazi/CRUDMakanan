@@ -20,3 +20,4 @@ public interface LoginContract {
         void checkLogin(Context context);
     }
 }
+
