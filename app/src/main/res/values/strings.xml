@@ -12,4 +12,11 @@
 
     <string name="gender_male">Male</string>
     <string name="gender_female">Female</string>
+    <string name="kelola_makanan">Kelola Makanan</string>
+    <string name="name_makanan">Name Makanan</string>
+    <string name="deskripsi_makanan">Deskripsi makanan</string>
+    <string name="kategor_makanan">Kategor Makanan</string>
+    <string name="save">Save</string>
+    <string name="delete">delete</string>
+    <string name="update">update</string>
 </resources>

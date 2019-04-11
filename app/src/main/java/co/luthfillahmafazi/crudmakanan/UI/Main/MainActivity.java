@@ -17,6 +17,7 @@ import butterknife.ButterKnife;
 import co.luthfillahmafazi.crudmakanan.R;
 import co.luthfillahmafazi.crudmakanan.UI.Favorite.FavoriteFragment;
 import co.luthfillahmafazi.crudmakanan.UI.Makanan.MakananFragment;
+import co.luthfillahmafazi.crudmakanan.UI.MakananByUser.MakananByUserFragment;
 import co.luthfillahmafazi.crudmakanan.UI.Profile.ProfileFragment;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View {
@@ -37,12 +38,14 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {
                 case R.id.navigation_makanan:
+                    getSupportActionBar().setTitle("Makanan");
                     MakananFragment makananFragment = new MakananFragment();
                     loadFragment(makananFragment);
                     return true;
-                case R.id.navigation_favorite:
-                    FavoriteFragment favoriteFragment = new FavoriteFragment();
-                    loadFragment(favoriteFragment);
+                case R.id.navigation_kelola_makanan:
+                    getSupportActionBar().setTitle("Kelola Makanan");
+                    MakananByUserFragment makananByUserFragment = new MakananByUserFragment();
+                    loadFragment(makananByUserFragment);
                     return true;
                 case R.id.navigation_profile:
                     ProfileFragment profileFragment = new ProfileFragment();
