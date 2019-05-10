@@ -15,12 +15,6 @@ public class MakananResponse {
     private List <MakananData> data;
 
 
-    @SerializedName("url")
-    private String url;
-
-    @SerializedName("name")
-    private String name;
-
     public int getResult() {
         return result;
     }

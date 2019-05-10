@@ -65,8 +65,6 @@
                     android:text="Perempuan" />
             </RadioGroup>
 
-
-
             <EditText
                 android:id="@+id/edtusername"
                 android:layout_width="match_parent"

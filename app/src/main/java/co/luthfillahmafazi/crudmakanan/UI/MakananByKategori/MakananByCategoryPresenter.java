@@ -25,7 +25,7 @@ public class MakananByCategoryPresenter implements MakananByCategoryContract.Pre
             view.showFailure("Data Category tidak ada");
             return;
         }
-        Call<MakananResponse> call = apiInterface.getMakananByCategory(Integer.valueOf(idCategory));
+       Call<MakananResponse> call = apiInterface.getMakananByCategory(Integer.valueOf(idCategory));
         call.enqueue(new Callback<MakananResponse>() {
             @Override
             public void onResponse(Call<MakananResponse> call, Response<MakananResponse> response) {
@@ -33,17 +33,18 @@ public class MakananByCategoryPresenter implements MakananByCategoryContract.Pre
                 if (response.body() != null) {
                     if (response.body().getResult() == 1) {
                         view.showFoodByCategory(response.body().getData());
-                    }else {
+                    } else {
                         view.showFailure(response.body().getMessage());
                     }
-                }else {
-                    view.showFailure("Data kosong");
+                } else {
+                    view.showFailure("Data Kosong");
                 }
             }
 
             @Override
             public void onFailure(Call<MakananResponse> call, Throwable t) {
-                view.showFailure(t.getMessage());
+                view.hideProgress();
+                view.showFailure("Koneksi gagal");
             }
         });
     }

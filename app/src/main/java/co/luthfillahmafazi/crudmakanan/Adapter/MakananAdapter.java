@@ -149,7 +149,7 @@ public class MakananAdapter extends RecyclerView.Adapter<MakananAdapter.ViewHold
                 foodNewsViewHolder2.itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        context.startActivity(new Intent(context, MakananByCategoriActivity.class).putExtra(Constant.KEY_EXTRA_ID_MAKANAN, makananItem.getId_kategori()));
+                        context.startActivity(new Intent(context, DetailMakananActivity.class).putExtra(Constant.KEY_EXTRA_ID_MAKANAN, makananItem.getId_makanan()));
                     }
                 });
                 break;
